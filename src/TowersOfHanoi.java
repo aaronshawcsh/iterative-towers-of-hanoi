@@ -7,7 +7,11 @@ public class TowersOfHanoi {
     }
     public static void testPrintSequence() {
         int numberOfDisks = 4;
-        System.out.println(Arrays.toString(generateDiskMovementSequence(numberOfDisks)));
+        try {
+            System.out.println(Arrays.toString(generateDiskMovementSequence(numberOfDisks)));
+        } catch(InputMismatchException e) {
+            System.out.println("The number of disks cannot be less than 1.");
+        }
     }
     public static int[] generateDiskMovementSequence(int numberOfDisks) throws InputMismatchException {
         if(numberOfDisks < 1) throw new InputMismatchException();
