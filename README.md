@@ -5,7 +5,7 @@ this attempt uses a disk movement sequence generation algorithm based on the num
 
 viability unknown
 
-# update 1.01:
+# update 1.01
 
 disk movement sequence generation successful, testing phase complete
 
